@@ -8,19 +8,33 @@
                  [com.google.guava/guava "16.0.1"]
                  [it.unimi.dsi/fastutil "6.5.7"]
                  [org.deeplearning4j/deeplearning4j-nlp "0.0.3.2.5"]
-                 [uk.ac.susx.mlcl/Byblo "2.1.0"]
+                 [uk.ac.susx.mlcl/Byblo "2.2.0-SNAPSHOT"]
                  [org.clojure/tools.logging "0.3.1"]
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                  [com.beust/jcommander "1.48"]
-                 [org.fusesource.leveldbjni/leveldbjni-all "1.8"]]
+                 [org.fusesource.leveldbjni/leveldbjni-all "1.8"]
+		[uk.ac.susx.mlcl/FeatureExtractionToolkit "0.3.6"]
+	]
   :main uk.ac.susx.tag.apt.tasks.Main
-  :javac-options ["-target" "1.8" "-source" "1.8" "-Xlint:-options"]
+  :javac-options ["-target_new" "1.8" "-source" "1.8" "-Xlint:-options"]
   :repositories [["oracle" "http://download.oracle.com/maven"]
                  ["sonatype" {:url "http://oss.sonatype.org/content/repositories/snapshots"
                               :snapshots true
                               :releases false
                               :sign-releases false
                               :checksum :fail
-                 }]]
+                 }]
+		["snapshots" "http://tag-dev.inf.susx.ac.uk/mvn/snapshot"]
+		["releases" "http://tag-dev.inf.susx.ac.uk/mvn/release" ]
+
+
+
+
+
+
+		["snapshots" "http://tag.inf.susx.ac.uk/mvn/snapshot" ]
+		["releases" "http://tag.inf.susx.ac.uk/mvn/release" ]	]
+			
+
   :source-paths ["src/clojure"]
   :java-source-paths ["src/java"])
