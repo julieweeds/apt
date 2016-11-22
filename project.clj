@@ -13,7 +13,7 @@
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                  [com.beust/jcommander "1.48"]
                  [org.fusesource.leveldbjni/leveldbjni-all "1.8"]
-		[uk.ac.susx.mlcl/FeatureExtractionToolkit "0.3.6"]
+		
 	]
   :main uk.ac.susx.tag.apt.tasks.Main
   :javac-options ["-target_new" "1.8" "-source" "1.8" "-Xlint:-options"]
